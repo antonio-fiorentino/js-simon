@@ -1,3 +1,4 @@
+
 function randomNumber(min, max) {
   var result = Math.floor(Math.random() * (max + 1 - min) + min);
   return result;
@@ -16,5 +17,34 @@ while (numeriPc.length<5) {
   }
 }
 console.log(numeriPc);
-
 var alertNumeri = alert(numeriPc);
+
+
+var element = document.getElementById('conto');
+var conto = 3;
+
+element.innerText = conto;
+
+
+var countdown = setInterval(function() {
+  conto--;
+  element.innerText = conto
+  if(conto === 0) {
+
+    setTimeout(function() {
+      for (var i = 0; i < 5; i++) {
+        var utente = parseInt(prompt('Inserire i numeri'));
+        if (numeriUtente.includes(utente)=== true){
+          alert('Non puoi inserire lo stesso numero');
+          break;
+        }else {
+          numeriUtente.push(utente);
+          console.log('Numeri utente ' + numeriUtente);
+        }
+        }
+    }, 200);
+
+    clearInterval(countdown)
+  }
+
+}, 1000)
