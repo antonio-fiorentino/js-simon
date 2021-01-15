@@ -44,11 +44,10 @@ var countdown = setInterval(function() {
         }}
         //Risultato
 
-
         if (numeriPc.includes(utente)=== true) {
-              var risultato = numeriCorretti + 1
-            }
-            console.log('I numeri corretti sono: '+ risultato);
+              numeriCorretti = numeriCorretti + 1
+        }
+        console.log('I numeri corretti sono: '+ numeriCorretti);
 
     }, 200);
     var numeriCorretti = parseInt(0);
