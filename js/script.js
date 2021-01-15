@@ -45,7 +45,7 @@ var countdown = setInterval(function() {
         //Risultato
 
         if (numeriPc.includes(utente)=== true) {
-              numeriCorretti = numeriCorretti + 1
+          numeriCorretti =+ 1
         }
         console.log('I numeri corretti sono: '+ numeriCorretti);
 
