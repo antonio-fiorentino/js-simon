@@ -43,16 +43,15 @@ var countdown = setInterval(function() {
           console.log('Numeri utente ' + numeriUtente);
         }}
         //Risultato
-        var numeriCorretti = parseInt(0);
 
-        if (numeriPc.includes(numeriUtente)=== true) {
-          var risultato = numeriCorretti + 1
-        }
 
-        console.log('I numeri corretti sono: '+ risultato);
+        if (numeriPc.includes(utente)=== true) {
+              var risultato = numeriCorretti + 1
+            }
+            console.log('I numeri corretti sono: '+ risultato);
 
     }, 200);
-
+    var numeriCorretti = parseInt(0);
     clearInterval(countdown)
   }
 
